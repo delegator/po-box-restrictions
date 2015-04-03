@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <tabs>
+        <delegator translate="label">
+            <label>Delegator</label>
+            <sort_order>426</sort_order>
+        </delegator>
+    </tabs>
+</config>

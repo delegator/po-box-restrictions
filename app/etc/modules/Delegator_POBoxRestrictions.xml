@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <modules>
+        <Delegator_POBoxRestrictions>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Delegator_All />
+            </depends>
+        </Delegator_POBoxRestrictions>
+    </modules>
+</config>

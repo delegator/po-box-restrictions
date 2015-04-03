@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <modules>
+        <Delegator_POBoxRestrictions>
+            <version>0.0.1</version>
+        </Delegator_POBoxRestrictions>
+    </modules>
+
+    <global>
+        <models>
+            <poboxrestrictions>
+                <class>Delegator_POBoxRestrictions</class>
+            </poboxrestrictions>
+        </models>
+        <helpers>
+            <poboxrestrictions>
+                <class>Delegator_POBoxRestrictions_Helper</class>
+            </poboxrestrictions>
+        </helpers>
+    </global>
+</config>

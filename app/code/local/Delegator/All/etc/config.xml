@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <modules>
+        <Delegator_All>
+            <version>1.0.0</version>
+        </Delegator_All>
+    </modules>
+</config>
