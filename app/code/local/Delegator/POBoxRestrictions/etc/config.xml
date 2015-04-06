@@ -17,5 +17,17 @@
                 <class>Delegator_POBoxRestrictions_Helper</class>
             </poboxrestrictions>
         </helpers>
+        <events>
+            <sales_quote_collect_totals_after>
+                <observers>
+                    <sales_quote_collect_totals_after_poboxrestrictions>
+                        <type>model</type>
+                        <class>Delegator_POBoxRestrictions_Model_Observer</class>
+                        <method>checkRestrictions</method>
+                        <args></args>
+                    </sales_quote_collect_totals_after_poboxrestrictions>
+                </observers>
+            </sales_quote_collect_totals_after>
+        </events>
     </global>
 </config>
