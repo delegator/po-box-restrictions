@@ -11,6 +11,11 @@
             <poboxrestrictions>
                 <class>Delegator_POBoxRestrictions</class>
             </poboxrestrictions>
+            <sales>
+                <rewrite>
+                    <quote_address>Delegator_POBoxRestrictions_Model_Quote_Address</quote_address>
+                </rewrite>
+            </sales>
         </models>
         <helpers>
             <poboxrestrictions>

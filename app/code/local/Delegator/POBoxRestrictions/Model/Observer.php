@@ -12,11 +12,22 @@ class Delegator_POBoxRestrictions_Model_Observer
         if ($restricted) {
             // Prune all shipping rates except for USPS.
             $rates = $shippingAddress->getShippingRatesCollection();
+            $restrictedMethods = Mage::helper('poboxrestrictions')->getRestrictedMethods();
             foreach ($rates as $rate) {
-                Mage::log($rate->getData());
+                if (in_array($rate['method'], $restrictedMethods)) {
+                    Mage::log("------");
+                    Mage::log("method: " . $rate['method']);
+                    Mage::log("ID: " . $rate->getId());
+                    $rates->removeItemByKey($rate->getId());
+                }
             }
 
-            Mage::log('remove the shipping methods not allowed');
+            $shippingAddress->setShippingRatesCollection($rates);
+
+            Mage::log('---');
+            $rates = $shippingAddress->getShippingRatesCollection();
+            foreach ($rates as $rate) { Mage::log($rate->getData()); }
+            Mage::log('---');
         }
 
         return true;
