@@ -6,6 +6,7 @@
             <codePool>local</codePool>
             <depends>
                 <Delegator_All />
+                <Mage_Sales />
             </depends>
         </Delegator_POBoxRestrictions>
     </modules>
