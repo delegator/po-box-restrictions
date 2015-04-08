@@ -2,9 +2,6 @@
 
 class Delegator_POBoxRestrictions_Helper_Data extends Mage_Core_Helper_Abstract
 {
-
-    private $_restrictedMethods = array('freeshipping');
-
     public function isAddressRestricted(Mage_Sales_Model_Quote_Address $address)
     {
         $streetAddress = $address->getStreetFull();
@@ -16,8 +13,9 @@ class Delegator_POBoxRestrictions_Helper_Data extends Mage_Core_Helper_Abstract
         return false;
     }
 
-    public function getRestrictedMethods()
+    public function getAllowedMethods()
     {
-        return $this->_restrictedMethods;
+        $allowedMethods = Mage::getStoreConfig('poboxrestrictions/allowed/methods');
+        return preg_split('/,/', $allowedMethods);
     }
 }

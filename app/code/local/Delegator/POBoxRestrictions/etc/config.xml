@@ -35,4 +35,12 @@
             </sales_quote_collect_totals_after>
         </events>
     </global>
+
+    <default>
+        <poboxrestrictions>
+            <allowed>
+                <methods>usps</methods>
+            </allowed>
+        </poboxrestrictions>
+    </default>
 </config>

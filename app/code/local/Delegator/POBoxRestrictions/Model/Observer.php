@@ -12,9 +12,9 @@ class Delegator_POBoxRestrictions_Model_Observer
         if ($restricted) {
             // Prune all shipping rates except for USPS.
             $rates = $shippingAddress->getShippingRatesCollection();
-            $restrictedMethods = Mage::helper('poboxrestrictions')->getRestrictedMethods();
+            $allowedMethods = Mage::helper('poboxrestrictions')->getAllowedMethods();
             foreach ($rates as $key => $rate) {
-                if (in_array($rate['method'], $restrictedMethods)) {
+                if (!in_array($rate['method'], $allowedMethods)) {
                     $rates->removeItemByKey($key);
                 }
             }
