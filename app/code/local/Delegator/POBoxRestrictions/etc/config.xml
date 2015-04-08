@@ -9,7 +9,7 @@
     <global>
         <models>
             <poboxrestrictions>
-                <class>Delegator_POBoxRestrictions</class>
+                <class>Delegator_POBoxRestrictions_Model</class>
             </poboxrestrictions>
             <sales>
                 <rewrite>
