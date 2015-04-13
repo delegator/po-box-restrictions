@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <checkout_onepage_index>
+        <reference name="content">
+            <block type="core/template" before="-" name="poboxrestrictions_message" template="poboxrestrictions/message.phtml" as="poboxrestrictions.message" />
+        </reference>
+    </checkout_onepage_index>
+</layout>

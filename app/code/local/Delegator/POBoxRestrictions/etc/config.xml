@@ -36,6 +36,16 @@
         </events>
     </global>
 
+    <frontend>
+        <layout>
+            <updates>
+                <poboxrestrictions>
+                    <file>poboxrestrictions.xml</file>
+                </poboxrestrictions>
+            </updates>
+        </layout>
+    </frontend>
+
     <default>
         <poboxrestrictions>
             <allowed>
