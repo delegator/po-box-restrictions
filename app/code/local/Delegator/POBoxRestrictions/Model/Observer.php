@@ -4,6 +4,11 @@ class Delegator_POBoxRestrictions_Model_Observer
 {
     public function checkRestrictions(Varien_Event_Observer $observer)
     {
+        $enabled = Mage::getStoreConfig('poboxrestrictions/general/enabled');
+        if (!$enabled) {
+            return true;
+        }
+
         $quote = $observer->getEvent()->getQuote();
         $shippingAddress = $quote->getShippingAddress();
 
