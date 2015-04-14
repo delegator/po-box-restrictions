@@ -48,6 +48,9 @@
 
     <default>
         <poboxrestrictions>
+            <general>
+                <enabled>true</enabled>
+            </general>
             <allowed>
                 <methods>usps</methods>
             </allowed>
