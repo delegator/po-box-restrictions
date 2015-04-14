@@ -14,7 +14,7 @@ class Delegator_POBoxRestrictions_Model_Observer
             $rates = $shippingAddress->getShippingRatesCollection();
             $allowedMethods = Mage::helper('poboxrestrictions')->getAllowedMethods();
             foreach ($rates as $key => $rate) {
-                if (!in_array($rate['method'], $allowedMethods)) {
+                if (!in_array($rate['carrier'], $allowedMethods)) {
                     $rates->removeItemByKey($key);
                 }
             }
