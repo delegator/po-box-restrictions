@@ -23,8 +23,9 @@
                             <label>Enabled</label>
                             <comment>
                                 <![CDATA[Use this option to quickly toggle the
-                                selected PO Box shipping restrictions. When enabled,
-                                PO Box addresses can only reveive their order via USPS.]]>
+                                selected PO Box shipping restrictions. When
+                                enabled, PO Box addresses can only receive their
+                                order via methods selected below.]]>
                             </comment>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
