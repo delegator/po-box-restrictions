@@ -1,9 +1,8 @@
 <?php 
+$enabled = Mage::getStoreConfig('poboxrestrictions/general/enabled');
 $messageEnabled = Mage::getStoreConfig('poboxrestrictions/warning/enabled');
-Mage::log($messageEnabled);
-if ($messageEnabled == true) {
+if ($enabled == true && $messageEnabled == true) {
     $message = Mage::getStoreConfig('poboxrestrictions/warning/message');
-    Mage::log($message);
     if ($message != '') {
 ?>
 <script type='text/javascript'>
