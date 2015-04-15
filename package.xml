@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<package>
+    <name>poboxrestrictions</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License, Version 2.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary></summary>
+    <description></description>
+    <notes></notes>
+    <authors>
+        <author>
+            <name>Delegator</name>
+            <user>delegator</user>
+            <email>support@delegator.com</email>
+        </author>
+    </authors>
+    <date>2014-04-15</date>
+    <time>10:30:00</time>
+    <contents>
+        <target name="magecommunity">
+            <dir name="Delegator">
+                <dir name="All">
+                    <dir name="etc">
+                        <file name="config.xml" hash="d8670f220a862051613019f9e7c4413e"/>
+                        <file name="system.xml" hash="748391f90e7d5a44f3c9453fa0ba8c4a"/>
+                    </dir>
+                </dir>
+                <dir name="POBoxRestrictions">
+                    <dir name="Block">
+                        <dir name="Checkout">
+                            <dir name="Onepage">
+                                <dir name="Shipping">
+                                    <dir name="Method">
+                                        <file name="Available.php" hash="62f1c591c244592019d2e6a86accc673"/>
+                                    </dir>
+                                </dir>
+                            </dir>
+                        </dir>
+                    </dir>
+                    <dir name="Helper">
+                        <file name="Data.php" hash="5ebca79540e17f4e6eec242085c1bda2"/>
+                    </dir>
+                    <dir name="Model">
+                        <dir name="Source">
+                            <file name="Methods.php" hash="dbbcbc96282d41e5eb666fe9f7dac621"/>
+                        </dir>
+                    </dir>
+                    <dir name="etc">
+                        <file name="adminhtml.xml" hash="011960540470f65c3161288dd9381b3f"/>
+                        <file name="config.xml" hash="ae512ad6dcdd3835224bb7a6ec9be64e"/>
+                        <file name="system.xml" hash="e24d0d7d0b63a3f5f0863ed5f680dbcf"/>
+                    </dir>
+                </dir>
+            </dir>
+        </target>
+        <target name="magedesign">
+            <dir name="frontend">
+                <dir name="base">
+                    <dir name="default">
+                        <dir name="layout">
+                            <file name="poboxrestrictions.xml" hash="c45902574950d6385ee21260838295f8"/>
+                        </dir>
+                        <dir name="template">
+                            <dir name="poboxrestrictions">
+                                <file name="message.phtml" hash="5c433844278c370139d986395254c92d"/>
+                            </dir>
+                        </dir>
+                    </dir>
+                </dir>
+            </dir>
+        </target>
+        <target name="mageetc">
+            <dir name="modules">
+                <file name="Delegator_All.xml" hash="24324c3c54599112f86570778e5f5383"/>
+                <file name="Delegator_POBoxRestrictions.xml" hash="33698ce2e67d2e4436d77aa69fbe928a"/>
+            </dir>
+        </target>
+    </contents>
+    <compatible/>
+    <dependencies>
+        <required>
+            <php>
+                <min>5.2.0</min>
+                <max>6.0.0</max>
+            </php>
+        </required>
+    </dependencies>
+</package>
