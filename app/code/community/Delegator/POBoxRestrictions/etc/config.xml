@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Delegator_POBoxRestrictions>
-            <version>0.0.1</version>
+            <version>0.1.0</version>
         </Delegator_POBoxRestrictions>
     </modules>
 
