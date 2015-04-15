@@ -16,6 +16,7 @@
             <checkout>
                 <rewrite>
                     <onepage_shipping_method_available>Delegator_POBoxRestrictions_Block_Checkout_Onepage_Shipping_Method_Available</onepage_shipping_method_available>
+                    <multishipping_shipping>Delegator_POBoxRestrictions_Block_Checkout_Multishipping_Shipping</multishipping_shipping>
                 </rewrite>
             </checkout>
         </blocks>

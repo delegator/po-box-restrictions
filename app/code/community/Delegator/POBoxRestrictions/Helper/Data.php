@@ -25,4 +25,27 @@ class Delegator_POBoxRestrictions_Helper_Data extends Mage_Core_Helper_Abstract
     {
         return $this->_POBoxRegex;
     }
+
+    // If this is a restricted address, return valid rates.
+    // Otherwise, return false.
+    public function getValidRatesIfRestricted($address, $groups)
+    {
+        $restricted = $this->isAddressRestricted($address);
+
+        if (Mage::getStoreConfig('poboxrestrictions/general/enabled') && $restricted) {
+            $allowedMethods = $this->getAllowedMethods();
+            $valid = array();
+
+            foreach ($groups as $code => $_rates) {
+                foreach ($_rates as $_rate) {
+                    if (in_array($_rate['carrier'], $allowedMethods)) {
+                        $valid[$code] = $_rates;
+                    }
+                }
+            }
+            return $valid;
+        }
+
+        return false;
+    }
 }

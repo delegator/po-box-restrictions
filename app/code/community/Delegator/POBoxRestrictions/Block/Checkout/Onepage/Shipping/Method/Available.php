@@ -5,24 +5,14 @@ class Delegator_POBoxRestrictions_Block_Checkout_Onepage_Shipping_Method_Availab
     public function getShippingRates()
     {
         $shippingAddress = $this->getQuote()->getShippingAddress();
-        $restricted = Mage::helper('poboxrestrictions')->isAddressRestricted($shippingAddress);
+        $groups = parent::getShippingRates();
 
-        if (Mage::getStoreConfig('poboxrestrictions/general/enabled') && $restricted) {
-            $groups = parent::getShippingRates();
-            $allowedMethods = Mage::helper('poboxrestrictions')->getAllowedMethods();
-            $valid = array();
-
-            foreach ($groups as $code => $_rates) {
-                foreach ($_rates as $_rate) {
-                    if (in_array($_rate['carrier'], $allowedMethods)) {
-                        $valid[$code] = $_rates;
-                    }
-                }
-            }
-
-            return $this->_rates = $valid;
-        } else {
-            return parent::getShippingRates();
+        $validRates = Mage::helper('poboxrestrictions')->getValidRatesIfRestricted($shippingAddress, $groups);
+        
+        if ($validRates) {
+            return $this->_rates = $validRates;
         }
+
+        return $groups;
     }
 }
