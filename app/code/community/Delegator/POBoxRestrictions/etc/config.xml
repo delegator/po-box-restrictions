@@ -11,29 +11,19 @@
             <poboxrestrictions>
                 <class>Delegator_POBoxRestrictions_Model</class>
             </poboxrestrictions>
-            <sales>
-                <rewrite>
-                    <quote_address>Delegator_POBoxRestrictions_Model_Quote_Address</quote_address>
-                </rewrite>
-            </sales>
         </models>
+        <blocks>
+            <checkout>
+                <rewrite>
+                    <onepage_shipping_method_available>Delegator_POBoxRestrictions_Block_Checkout_Onepage_Shipping_Method_Available</onepage_shipping_method_available>
+                </rewrite>
+            </checkout>
+        </blocks>
         <helpers>
             <poboxrestrictions>
                 <class>Delegator_POBoxRestrictions_Helper</class>
             </poboxrestrictions>
         </helpers>
-        <events>
-            <sales_quote_collect_totals_after>
-                <observers>
-                    <sales_quote_collect_totals_after_poboxrestrictions>
-                        <type>model</type>
-                        <class>Delegator_POBoxRestrictions_Model_Observer</class>
-                        <method>checkRestrictions</method>
-                        <args></args>
-                    </sales_quote_collect_totals_after_poboxrestrictions>
-                </observers>
-            </sales_quote_collect_totals_after>
-        </events>
     </global>
 
     <frontend>
