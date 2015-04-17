@@ -53,7 +53,7 @@
                     <dir name="etc">
                         <file name="adminhtml.xml" hash="011960540470f65c3161288dd9381b3f"/>
                         <file name="config.xml" hash="6c1d224a542568e5b2dac8b836e359dd"/>
-                        <file name="system.xml" hash="e24d0d7d0b63a3f5f0863ed5f680dbcf"/>
+                        <file name="system.xml" hash="5c6bb31528113f36dc3f171b6f6c0b34"/>
                     </dir>
                 </dir>
             </dir>
@@ -67,7 +67,7 @@
                         </dir>
                         <dir name="template">
                             <dir name="poboxrestrictions">
-                                <file name="message.phtml" hash="5c433844278c370139d986395254c92d"/>
+                                <file name="message.phtml" hash="f7cc25dc945a6e0d5ddb716c1a1a041c"/>
                             </dir>
                         </dir>
                     </dir>

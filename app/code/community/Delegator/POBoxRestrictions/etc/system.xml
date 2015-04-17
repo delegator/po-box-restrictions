@@ -36,10 +36,33 @@
                         </enabled>
                     </fields>
                 </general>
+                <allowed translate="label">
+                    <label>Allowed Shipping Methods</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <methods translate="label comment">
+                            <label>Shipping Methods</label>
+                            <comment>
+                                <![CDATA[Select the methods that are allowed to ship to PO Boxes.]]>
+                            </comment>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>poboxrestrictions/source_methods</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </methods>
+                    </fields>
+                </allowed>
                 <warning translate="label">
                     <label>Warning</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>20</sort_order>
+                    <sort_order>30</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
@@ -66,31 +89,21 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </message>
-                    </fields>
-                </warning>
-                <allowed translate="label">
-                    <label>Allowed Shipping Methods</label>
-                    <frontend_type>text</frontend_type>
-                    <sort_order>30</sort_order>
-                    <show_in_default>1</show_in_default>
-                    <show_in_website>1</show_in_website>
-                    <show_in_store>1</show_in_store>
-                    <expanded>1</expanded>
-                    <fields>
-                        <methods translate="label comment">
-                            <label>Shipping Methods</label>
+                        <custom_css translate="label comment">
+                            <label>Custom CSS</label>
                             <comment>
-                                <![CDATA[Select the methods that are allowed to ship to PO Boxes.]]>
+                                <![CDATA[Use this field to insert custom CSS for the
+                                warning message &lt;div&gt;. You can also style the message
+                                with the #poboxrestrictions-warning CSS selector.]]>
                             </comment>
-                            <frontend_type>multiselect</frontend_type>
-                            <source_model>poboxrestrictions/source_methods</source_model>
-                            <sort_order>10</sort_order>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </methods>
+                        </custom_css>
                     </fields>
-                </allowed>
+                </warning>
             </groups>
         </poboxrestrictions>
     </sections>

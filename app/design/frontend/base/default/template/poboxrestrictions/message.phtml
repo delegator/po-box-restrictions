@@ -2,13 +2,14 @@
 $enabled = Mage::getStoreConfig('poboxrestrictions/general/enabled');
 $messageEnabled = Mage::getStoreConfig('poboxrestrictions/warning/enabled');
 $message = Mage::getStoreConfig('poboxrestrictions/warning/message');
+$customCss = Mage::getStoreConfig('poboxrestrictions/warning/custom_css');
 ?>
 <?php if ($enabled && $messageEnabled && $message != ''): ?>
     <script type='text/javascript'>
         $(document).observe("dom:loaded", function () {
             "use strict";
             $$('label[for=shipping:street1]')[0].insert({
-                before: "<div id='poboxrestrictions-warning'><?php echo htmlspecialchars($message); ?></div>"
+                before: "<div id='poboxrestrictions-warning' style='<?php echo $customCss; ?>'><?php echo htmlspecialchars($message); ?></div>"
             });
         });
     </script>
