@@ -30,17 +30,20 @@
                 <dir name="POBoxRestrictions">
                     <dir name="Block">
                         <dir name="Checkout">
+                            <dir name="Multishipping">
+                                <file name="Shipping.php" hash="4c13be2b1d3f6e76fe6f21d35be7d21e"/>
+                            </dir>
                             <dir name="Onepage">
                                 <dir name="Shipping">
                                     <dir name="Method">
-                                        <file name="Available.php" hash="62f1c591c244592019d2e6a86accc673"/>
+                                        <file name="Available.php" hash="679bb9ca3f4c93b0e196dda8e3a34c5d"/>
                                     </dir>
                                 </dir>
                             </dir>
                         </dir>
                     </dir>
                     <dir name="Helper">
-                        <file name="Data.php" hash="5ebca79540e17f4e6eec242085c1bda2"/>
+                        <file name="Data.php" hash="7fd31503df2273b52b4da985b70e793a"/>
                     </dir>
                     <dir name="Model">
                         <dir name="Source">
@@ -49,7 +52,7 @@
                     </dir>
                     <dir name="etc">
                         <file name="adminhtml.xml" hash="011960540470f65c3161288dd9381b3f"/>
-                        <file name="config.xml" hash="ae512ad6dcdd3835224bb7a6ec9be64e"/>
+                        <file name="config.xml" hash="6c1d224a542568e5b2dac8b836e359dd"/>
                         <file name="system.xml" hash="e24d0d7d0b63a3f5f0863ed5f680dbcf"/>
                     </dir>
                 </dir>
