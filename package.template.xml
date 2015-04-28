@@ -16,10 +16,9 @@
             <email>support@delegator.com</email>
         </author>
     </authors>
-    <date></date>
-    <time></time>
-    <contents>
-    </contents>
+    <date />
+    <time />
+    <contents />
     <compatible/>
     <dependencies>
         <required>
