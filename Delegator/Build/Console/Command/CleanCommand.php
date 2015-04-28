@@ -16,13 +16,12 @@ class CleanCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $output->write('Clearing var/ directory, deleting existing package file, .DS_Store files, and .un~ files... ');
+        $output->write('Clearing var/ directory, deleting existing package file, .DS_Store files, package.xml, and .un~ files... ');
         `rm -rf var/`;
+        `rm -f package.xml`;
         `find . -name "*.un~" -delete`;
         `find . -name ".DS_Store" -delete`;
         `rm -f *tgz`;
-        $output->writeln('<info>Done</info>');
-
         $output->writeln('<info>Done</info>');
     }
 }
