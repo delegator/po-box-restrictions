@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package>
+    <name>poboxrestrictions</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License, Version 2.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary></summary>
+    <description></description>
+    <notes></notes>
+    <authors>
+        <author>
+            <name>Delegator</name>
+            <user>delegator</user>
+            <email>support@delegator.com</email>
+        </author>
+    </authors>
+    <date></date>
+    <time></time>
+    <contents>
+    </contents>
+    <compatible/>
+    <dependencies>
+        <required>
+            <php>
+                <min>5.2.0</min>
+                <max>6.0.0</max>
+            </php>
+        </required>
+    </dependencies>
+</package>
