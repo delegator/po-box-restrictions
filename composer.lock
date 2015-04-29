@@ -4,9 +4,59 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "eb7af7a5574eef3bf90c70ac5456ad2f",
+    "hash": "b7f449b41cec113b06ba8b93f20618c6",
     "packages": [],
     "packages-dev": [
+        {
+            "name": "delegator/magegen",
+            "version": "0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/delegator/magegen.git",
+                "reference": "cd55d6ab0397fafd84029df61d2e3d1dad911fa6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/delegator/magegen/zipball/cd55d6ab0397fafd84029df61d2e3d1dad911fa6",
+                "reference": "cd55d6ab0397fafd84029df61d2e3d1dad911fa6",
+                "shasum": ""
+            },
+            "require": {
+                "phpunit/phpunit": "~4.4.1",
+                "satooshi/php-coveralls": "~0.6.1",
+                "symfony/console": "~2.6.1",
+                "symfony/finder": "~2.6.1",
+                "symfony/process": "~2.6.1"
+            },
+            "bin": [
+                "bin/magegen"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Delegator\\": "./src"
+                },
+                "files": [
+                    "lib/FileIterator.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache License V2"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Richards",
+                    "email": "tom.r@delegator.com"
+                },
+                {
+                    "name": "Bobby Burden",
+                    "email": "bobby.b@delegator.com"
+                }
+            ],
+            "description": "Build system for Magento extensions.",
+            "time": "2015-04-29 20:38:42"
+        },
         {
             "name": "doctrine/instantiator",
             "version": "1.0.4",
