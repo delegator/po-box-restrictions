@@ -6,8 +6,8 @@
     <license uri="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License, Version 2.0</license>
     <channel>community</channel>
     <extends/>
-    <summary></summary>
-    <description></description>
+    <summary>The P.O. Box Shipping Restrictions extension allows you to easily control the shipping options available to your customers, based on whether they are shipping to a P.O. Box or not.</summary>
+    <description>The P.O. Box Shipping Restrictions extension allows you to easily control the shipping options available to your customers, based on whether they are shipping to a P.O. Box or not. This flexible and customizable extension gives you complete control over the messaging and shipping options for both P.O. Box and typical shipping addresses. Eliminate the frustration of ‘free shipping’ options to P.O. Boxes.</description>
     <notes></notes>
     <authors>
         <author>
