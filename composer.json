@@ -1,11 +1,10 @@
 {
     "name": "delegator/poboxrestrictions",
-    "authors": [
-        {
-            "name": "POBoxRestrictions Magento Extension",
-            "email": "support@delegator.com"
-        }
-    ],
+    "type": "magento-module",
+    "license": "Apache-2.0",
+    "require": {
+      "magento-hackathon/magento-composer-installer": "*"
+    },
     "require-dev": {
         "delegator/magegen": "~0.0.3"
     }
